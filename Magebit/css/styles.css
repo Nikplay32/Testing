@@ -1,0 +1,381 @@
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 0;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* --------------------- */
+
+.container {
+    width: 540px;
+    height: 1080px;
+    background: #FFFFFF;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------------- */
+
+.navbar {
+    display: flex;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 75px;
+}
+
+.logoImage {
+    position: relative;
+    width: 20px;
+    height: 35px;
+    padding-right: 10px;
+    padding-top: 7px;
+}
+
+.logoText {
+    position: relative;
+    padding-bottom: 4px;
+    width: 60px;
+    height: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+
+}
+
+nav li a {
+    padding-left: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #6A707B;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    margin: 3px 10px;
+}
+
+nav li a:hover {
+    color: #4066A5;
+    text-decoration-line: underline;
+}
+
+.navbar li a:active {
+    color: #233759;
+    text-decoration-line: underline;
+}
+
+/* --------------------- */
+
+.right {
+    position: absolute;
+    height: 1080px;
+    left: 543px;
+    width: 1620px;
+    top: 0px;
+    background-size: 1295px;
+    background-image: url("img/image_summer.png");
+    background-repeat: no-repeat;
+}
+
+.left {
+    padding-bottom: 11px;
+}
+
+.main_info {
+    padding-top: 80px;
+    padding-left: 115px;
+}
+
+h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 44px;
+    color: #131821;
+}
+
+p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    color: #6A707B;
+    max-width: 80%;
+}
+
+
+.email {
+    position: relative;
+    left: 75px;
+    z-index: 1;
+    font-size: 99%;
+    line-height: 175%;
+}
+
+input[type="email"] {
+    width: 92%;
+    height: 55px;
+    position: absolute;
+    padding-left: 31px;
+    z-index: 1;
+    border: 1px solid #E3E3E4;
+    border-left-width: 4px;
+    border-left-color: #4066A5;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 79%;
+    line-height: 175%;
+    color: #6A707B;
+    outline: none;
+}
+
+input[type="email"]:hover{
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+input[type="email"]:focus{
+    border-color: #4066A5;
+}
+
+.error {
+    position: relative;
+    left: 75px;
+    top: 20px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B80808;
+    display: none;
+}
+
+.arrow {
+    position: relative;
+    left: 490px;
+    margin-top: 22px;
+    background:url(img/ic_arrow.svg) no-repeat;
+	width: 100%; 
+	height: 16px; 
+	border: none;
+	cursor: pointer;
+    z-index: 1;
+}
+
+.arrow:hover{
+    background-image: url(img/ic_arrow_blue.svg);
+}
+
+.check_container {
+    position: relative;
+    padding-top: 50px;
+    padding-left: 115px;
+}
+
+.check {
+    position:relative;
+    top: 5px;
+    border: 1px solid #E3E3E4;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4066A5;
+}
+
+label {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    color: #6A707B;
+}
+
+.terms {
+    font-family: 'Arial';
+    font-style: normal;
+    color: #131821;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    text-decoration: underline;
+}
+
+.terms:hover {
+    color: #4066A5;
+}
+
+.terms:active {
+    color: #233759;
+}
+
+.line {
+    position: relative;
+    width: 80%;
+    top: 40px;
+    right: 10%;
+    border-color: #E3E3E4;
+    opacity: 20%;
+}
+
+.social {
+    position: relative;
+    padding-top: 45px;
+    padding-left: 165px;
+}
+
+.fa {
+    border: 2px solid #E3E3E4;
+    list-style-type: none;
+    color: #6A707B;
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    background: transparent;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    background-color: #4267B2;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}  
+
+.fa-facebook:active {
+    background-color: #2F4A80;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.fa-instagram:hover {
+    background-color: #C13584;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}  
+
+.fa-instagram:active {
+    background-color: #8F2762;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.fa-twitter:hover {
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}  
+
+.fa-twitter:active {
+    background-color: #177FBF;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.fa-youtube:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}  
+
+.fa-youtube:active {
+    background-color: #CC0000;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        background-image: url("./img/image_summer.png");
+        background-position: 1200px;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .navbar {
+        padding: 15px;
+        background-color: white;
+    }
+
+    nav {
+        position: absolute;
+        right: 30px;
+    }
+
+    a {
+        padding-left: 0px;
+    }
+
+    .logoText {
+        display: none;
+    }
+
+    .data_container {
+        background-color: #FFFFFF;
+        width: 90vw;
+        top: 30%;
+        left: 5%;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+    }
+
+    input[type="email"] {
+        max-width: 75%;
+    }
+
+    .arrow {
+        max-width: 70%;
+        left: 75%;
+    }
+
+    .main_info {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .email {
+        left: 20px;
+    }
+
+    .check_container{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .line {
+        width: 90%;
+        left: -10px;
+        top: 10px;
+    }
+
+    .social {
+        bottom: 30px;
+        padding-left: 55px;
+    }
+
+}

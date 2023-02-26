@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/6f0d140717.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="navbar">
+                <div class="logo">
+                    <img class="logoImage" src="css/img/Union.png" alt="pineappleLogo">
+                    <img class="logoText" src="css/img/pineapple..svg" alt="pineappleName">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="data_container">
+                <section class="main_info">
+                    <h1>Subscibe to newsletter</h1>
+                    <p>Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
+                </section>
+
+                <form class="email" id="email_form">
+                    <input id="email" type="email" placeholder="Type your email address here…">
+                    <button id="arrow" class="arrow" type="submit" value=""></button>
+                </form>
+                <div class="error" id="error"></div>
+
+                <div class="check_container">
+                    <label class="label">
+                        <input id="check" class="check" onchange="document.getElementById('arrow').disabled = !this.checked;" type="checkbox"/> I agree to <span><a href="#" class="terms">terms of service</a></span>
+                    </label>
+                    <hr class="line">
+                </div>
+            
+                
+                <footer class="social">
+                    <a><i class="fa fa-facebook"></i></a>
+                    <a><i class="fa fa-instagram"></i></a>
+                    <a><i class="fa fa-twitter"></i></a>
+                    <a><i class="fa fa-youtube"></i></a>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="right"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
