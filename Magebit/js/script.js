@@ -10,8 +10,13 @@ input.addEventListener('submit', ValidateEmail);
 function ValidateEmail(event) {
     const knopka = document.querySelector('.check:checked') !== null;
     let mailRegex = /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
-
-    if(input2.value.match(mailRegex)){
+    
+    if(input2.value.length == 0) {
+        error.style.display = 'block';
+        input2.style.borderColor = '#B80808'
+        error.innerHTML = "Email address is required";
+        button.disabled;
+    } else if(input2.value.match(mailRegex)){
         input2.style.borderColor = '#4066A5'
         error.style.display = 'none';
     } else {
@@ -31,12 +36,7 @@ function ValidateEmail(event) {
         error.innerHTML = "Please accept terms and conditions";
         button.disabled;
     }
-    if(input2 == "") {
-        error.style.display = 'block';
-        input2.style.borderColor = '#B80808'
-        error.innerHTML = "Email address is required";
-        button.disabled;
-    }
+    
     event.preventDefault()
 }
 
